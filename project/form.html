@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+	<head>
+		<!--Username: nsparrow, id: Spani321 4742998, file: form.html-->
+		<title>One Sky</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" type="text/css" href="style_sheet.css">
+		<script src="validation_form.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<!--Header-->
+		<h1><a href="index.html"><img src="images/h1.jpg" width="1000" height="200" alt="Site name One Sky"></a>
+		<!--http://cooltext.com-->
+		</h1>
+		
+		<!--Navigation bar-->
+		<ul id="nav_bar">
+			<li class="nav"><a href="index.html">Home</a></li>
+			<li class="nav"><a href="services.html">Services</a></li>
+			<li class="nav"><a href="about_us.html">About Us</a></li>
+			<li class="nav">Contact Us</li>
+		</ul>
+		
+		<!--Page Content-->
+		<div id="contents_plus_form">
+			<div id="contents">
+			
+				<!--Title http://cooltext.com-->
+				<h2><img src="images/contact_us.png" width="326" height="84" alt="Contact us header"></h2>
+				
+				<!--My Contact Information-->
+				<h3>New Zealand</h3>
+				<p><strong>Address:</strong> 315 Leith Street</p>
+				<p class="address_format">Dunedin 9016</p>
+				<p><strong>Phone:</strong> 021 049 8911</p>
+				<p><strong>Email:</strong> spani321@student.otago.ac.nz</p>
+			</div>
+		<!--Form-->
+		
+			<!--Form takes the persons First Name, Last Name, Phone Number(but not required), Email Address and a message or enquiry then sends that information to nicksparrow@xtra.co.nz-->
+			<form method="get" enctype="x-www-urlencoded" action="http://web112.otago.ac.nz/112bin/112formslab.cgi" onsubmit="return validate()">
+				<div>
+					<input type="hidden" name="recipient" value="nicksparrow@xtra.co.nz">
+					<input type="hidden" name="subject" value="Business Enquiry">
+					<input type="hidden" name="followup-page" value="http://csnet.otago.ac.nz/nsparrow/project/success.html">
+				</div>
+				<fieldset class="textInputs">
+					<legend class="invisible">Contact Information:</legend>
+					<ul>
+						<li>
+							<label for="firstname">First Name(required):</label>
+							<input type="text" id="firstname" tabindex="1" name="FirstName" title="Your first name and any middle names.">
+							<p id="firstname_error" class="error"></p>
+						</li>
+						<li>
+							<label for="surname">Surname(required):</label>
+							<input type="text" id="surname" name="Surname" title="Your last name.">
+							<p id="surname_error" class="error"></p>
+						</li>
+						<li>
+							<label for="phone">Phone Number:</label>
+							<input type="text" id="phone" name="PhoneNum" title="Your phone number but is optional">
+						</li>
+						<li>
+							<label for="sender">Email Address(required):</label>
+							<input type="text" id="sender" name="Email" title="Your email address">
+							<p id="sender_error" class="error"></p>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Message or Enquiry:</legend>
+					<label>
+						<textarea cols="30" rows="4" id="comments" name="Comments" title="Any questions you have about what we do or how we might be able to help you">What can One Sky do for you?</textarea>
+					</label>
+				</fieldset>
+				
+				<!--Submit and Clear Buttons-->
+				<fieldset id="formControls">
+					<legend class="invisible">Form Buttons</legend>
+					<input type="reset" value="Clear">
+					<input type="submit" value="Submit">
+				</fieldset>
+			</form>
+		</div>
+		
+		<!--Page Footer-->
+		<div id="footer">
+			<p>Nick Sparrow, id: Spani321, idNo: 4742998, Last Modified: Monday 12th May.</p>
+		</div>
+	</body>
+</html>
